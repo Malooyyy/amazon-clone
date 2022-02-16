@@ -1,0 +1,13 @@
+.banner__wrapper {
+	position: relative;
+
+	.top__carousel {
+		position: absolute;
+		width: 100%;
+		height: 8rem;
+		background-image: linear-gradient(to top, rgb(243, 244, 246));
+		z-index: 20;
+		background: transparent;
+		bottom: 0px;
+	}
+}

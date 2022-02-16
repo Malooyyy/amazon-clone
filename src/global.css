@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-width: 100%;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Amazon Ember b';
+	font-weight: 100 !important;
+	background-color: rgb(243, 244, 246);
+}
+
+input {
+	border: none;
+	font-family: 'AmazonEmber_Bd';
+	font-weight: 700;
+	font-size: 15px;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+:root {
+	/* { Background } */
+	--header-bg: rgba(19, 25, 33);
+	--search-bg: rgb(250, 204, 21);
+	--search-hover: rgb(234, 179, 8);
+	--bg-amazon-blue: rgb(35, 47, 62);
+
+	/* { Color } */
+	--text-white: rgb(255, 255, 255);
+}
+
+.link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.cost {
+	visibility: hidden;
+}
+
+@media all and (min-width: 1024px) {
+	.cost {
+		visibility: visible;
+	}
+}
+
+.main {
+	max-width: 1536px;
+	margin: 0 auto;
+}
+
+.cart__container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.sort__panel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@font-face {
+	font-family: 'Amazon Ember b';
+	src: url(../public/static/fonts/AmazonEmber_Bd.ttf);
+}
+
+@font-face {
+	font-family: 'Amazon Ember l';
+	src: url(../public/static/fonts/AmazonEmber_Lt.ttf);
+}
+
+@font-face {
+	font-family: 'Amazon Ember m';
+	src: url(../public/static/fonts/Amazon-Ember-Medium.ttf);
+}
